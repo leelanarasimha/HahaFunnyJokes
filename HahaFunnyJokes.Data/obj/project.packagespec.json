@@ -1,0 +1,58 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Data/HahaFunnyJokes.Data.csproj",
+    "projectName": "HahaFunnyJokes.Data",
+    "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Data/HahaFunnyJokes.Data.csproj",
+    "outputPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Data/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj": {
+            "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.4, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Pomelo.EntityFrameworkCore.MySql": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.deps.json
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.dll
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.pdb
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.csprojAssemblyReference.cache
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.csproj.CoreCompileInputs.cache
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.AssemblyInfoInputs.cache
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.AssemblyInfo.cs
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.dll
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Domain.pdb

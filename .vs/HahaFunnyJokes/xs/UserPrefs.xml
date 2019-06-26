@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{E142B0A7-C509-4917-85B0-C530E6E4CE29}|Default">
+  <MonoDevelop.Ide.ItemProperties.HahaFunnyJokes.Api PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HahaFunnyJokes.Api/appsettings.json">
+    <Files>
+      <File FileName="HahaFunnyJokes.Domain/Role.cs" Line="1" Column="1" />
+      <File FileName="HahaFunnyJokes.Domain/User.cs" />
+      <File FileName="HahaFunnyJokes.Domain/Joke.cs" />
+      <File FileName="HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" Line="20" Column="1" />
+      <File FileName="HahaFunnyJokes.Api/Program.cs" />
+      <File FileName="HahaFunnyJokes.Api/Startup.cs" Line="55" Column="1" />
+      <File FileName="HahaFunnyJokes.Api/appsettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HahaFunnyJokes" expanded="True">
+            <Node name="HahaFunnyJokes.Api" expanded="True">
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+            <Node name="HahaFunnyJokes.Data" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
