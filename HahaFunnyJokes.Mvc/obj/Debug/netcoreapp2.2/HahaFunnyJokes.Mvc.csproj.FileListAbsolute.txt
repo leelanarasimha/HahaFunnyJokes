@@ -33,3 +33,4 @@
 /Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Mvc.dll
 /Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Mvc.pdb
 /Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/obj/Debug/netcoreapp2.2/Razor/Views/Category/Index.g.cshtml.cs
+/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/obj/Debug/netcoreapp2.2/Razor/Views/Category/Add.g.cshtml.cs

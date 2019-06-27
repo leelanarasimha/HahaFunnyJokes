@@ -22,8 +22,16 @@ namespace HahaFunnyJokes.Mvc.Controllers.Admin
             {
                 categories = _categoryRepository.getAllCategories()
             };
-            Console.WriteLine(CategoryViewModel.categories);
+            
 
+            return View(CategoryViewModel);
+        }
+
+
+        [Route("admin/category/add")]
+        public IActionResult Add()
+        {
+            
             return View();
         }
     }

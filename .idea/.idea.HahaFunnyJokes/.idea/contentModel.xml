@@ -111,6 +111,7 @@
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="Admin" t="Include" />
           <e p="Category" t="Include">
+            <e p="Add.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Home" t="Include">
