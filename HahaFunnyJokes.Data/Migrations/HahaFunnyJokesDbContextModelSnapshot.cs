@@ -51,18 +51,6 @@ namespace HahaFunnyJokes.Data.Migrations
                     b.ToTable("Jokes");
                 });
 
-            modelBuilder.Entity("HahaFunnyJokes.Domain.Role", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Roles");
-                });
-
             modelBuilder.Entity("HahaFunnyJokes.Domain.User", b =>
                 {
                     b.Property<int>("Id")
@@ -70,13 +58,13 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<string>("Email");
 
+                    b.Property<int>("IsAdmin");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("RoleId");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -99,14 +87,6 @@ namespace HahaFunnyJokes.Data.Migrations
                     b.HasOne("HahaFunnyJokes.Domain.User", "User")
                         .WithMany("Jokes")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("HahaFunnyJokes.Domain.User", b =>
-                {
-                    b.HasOne("HahaFunnyJokes.Domain.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

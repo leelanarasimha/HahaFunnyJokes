@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahaFunnyJokes.Api", "HahaFunnyJokes.Api\HahaFunnyJokes.Api.csproj", "{E142B0A7-C509-4917-85B0-C530E6E4CE29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahaFunnyJokes.Api", "HahaFunnyJokes.Api\HahaFunnyJokes.Api.csproj", "{E142B0A7-C509-4917-85B0-C530E6E4CE29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahaFunnyJokes.Data", "HahaFunnyJokes.Data\HahaFunnyJokes.Data.csproj", "{924D1EA7-FC46-4D15-9354-D94BB9A77AD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahaFunnyJokes.Data", "HahaFunnyJokes.Data\HahaFunnyJokes.Data.csproj", "{924D1EA7-FC46-4D15-9354-D94BB9A77AD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahaFunnyJokes.Domain", "HahaFunnyJokes.Domain\HahaFunnyJokes.Domain.csproj", "{0062E2D7-62F2-4E5F-96CC-E3193A1F2605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahaFunnyJokes.Domain", "HahaFunnyJokes.Domain\HahaFunnyJokes.Domain.csproj", "{0062E2D7-62F2-4E5F-96CC-E3193A1F2605}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HahaFunnyJokes.Mvc", "HahaFunnyJokes.Mvc\HahaFunnyJokes.Mvc.csproj", "{A989F668-771B-43B2-981A-E5E02AA68B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HahaFunnyJokes.Logic", "HahaFunnyJokes.Logic\HahaFunnyJokes.Logic.csproj", "{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E142B0A7-C509-4917-85B0-C530E6E4CE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +59,35 @@ Global
 		{0062E2D7-62F2-4E5F-96CC-E3193A1F2605}.Release|x64.Build.0 = Release|Any CPU
 		{0062E2D7-62F2-4E5F-96CC-E3193A1F2605}.Release|x86.ActiveCfg = Release|Any CPU
 		{0062E2D7-62F2-4E5F-96CC-E3193A1F2605}.Release|x86.Build.0 = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|x64.Build.0 = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Debug|x86.Build.0 = Debug|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|x64.ActiveCfg = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|x64.Build.0 = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|x86.ActiveCfg = Release|Any CPU
+		{A989F668-771B-43B2-981A-E5E02AA68B63}.Release|x86.Build.0 = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|x64.Build.0 = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC25E9A6-D8D3-43EB-91A9-EAA4038E73B7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CCDED4F-80EF-4FD6-BE59-C3C7300ECCAC}
 	EndGlobalSection
 EndGlobal

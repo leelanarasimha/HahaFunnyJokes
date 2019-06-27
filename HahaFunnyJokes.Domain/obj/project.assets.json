@@ -686,29 +686,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/leelanarasimha/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\leelanarasimha\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj",
+      "projectUniqueName": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Domain\\HahaFunnyJokes.Domain.csproj",
       "projectName": "HahaFunnyJokes.Domain",
-      "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj",
-      "packagesPath": "/Users/leelanarasimha/.nuget/packages/",
-      "outputPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/obj/",
+      "projectPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Domain\\HahaFunnyJokes.Domain.csproj",
+      "packagesPath": "C:\\Users\\leelanarasimha\\.nuget\\packages\\",
+      "outputPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/leelanarasimha/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\leelanarasimha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.teamvelocityportal.com/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
