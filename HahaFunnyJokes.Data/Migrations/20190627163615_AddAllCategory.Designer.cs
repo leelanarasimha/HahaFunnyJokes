@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HahaFunnyJokes.Data.Migrations
 {
     [DbContext(typeof(HahaFunnyJokesDbContext))]
-    [Migration("20190626185330_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190627163615_AddAllCategory")]
+    partial class AddAllCategory
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,6 +19,29 @@ namespace HahaFunnyJokes.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("HahaFunnyJokes.Domain.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreatedDate");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Slug")
+                        .IsRequired();
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasAlternateKey("Slug");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("HahaFunnyJokes.Domain.Hobby", b =>
                 {
                     b.Property<int>("Id")
@@ -26,7 +49,12 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Slug")
+                        .IsRequired();
+
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Slug");
 
                     b.ToTable("Hobbies");
                 });
@@ -36,33 +64,58 @@ namespace HahaFunnyJokes.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("CategoryId");
+
                     b.Property<string>("Description");
 
                     b.Property<DateTime>("EndDate");
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Slug")
+                        .IsRequired();
+
                     b.Property<DateTime>("StartDate");
+
+                    b.Property<int>("SubcategoryId");
 
                     b.Property<int>("UserId");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Slug");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("SubcategoryId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Jokes");
                 });
 
-            modelBuilder.Entity("HahaFunnyJokes.Domain.Role", b =>
+            modelBuilder.Entity("HahaFunnyJokes.Domain.Subcategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("CategoryId");
+
+                    b.Property<DateTime>("CreatedDate");
+
                     b.Property<string>("Name");
+
+                    b.Property<string>("Slug");
+
+                    b.Property<int>("UserId");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Subcategories");
                 });
 
             modelBuilder.Entity("HahaFunnyJokes.Domain.User", b =>
@@ -70,15 +123,23 @@ namespace HahaFunnyJokes.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email");
+                    b.Property<DateTime>("CreatedDate");
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<int>("IsAdmin")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue(0);
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("RoleId");
+                    b.Property<string>("Slug")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoleId");
+                    b.HasAlternateKey("Slug", "Email");
 
                     b.ToTable("Users");
                 });
@@ -96,19 +157,42 @@ namespace HahaFunnyJokes.Data.Migrations
                     b.ToTable("UserHobbies");
                 });
 
+            modelBuilder.Entity("HahaFunnyJokes.Domain.Category", b =>
+                {
+                    b.HasOne("HahaFunnyJokes.Domain.User", "User")
+                        .WithMany("Categories")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("HahaFunnyJokes.Domain.Joke", b =>
                 {
+                    b.HasOne("HahaFunnyJokes.Domain.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("HahaFunnyJokes.Domain.Subcategory", "Subcategory")
+                        .WithMany()
+                        .HasForeignKey("SubcategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("HahaFunnyJokes.Domain.User", "User")
                         .WithMany("Jokes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("HahaFunnyJokes.Domain.User", b =>
+            modelBuilder.Entity("HahaFunnyJokes.Domain.Subcategory", b =>
                 {
-                    b.HasOne("HahaFunnyJokes.Domain.Role", "Role")
-                        .WithMany("Users")
-                        .HasForeignKey("RoleId")
+                    b.HasOne("HahaFunnyJokes.Domain.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("HahaFunnyJokes.Domain.User", "User")
+                        .WithMany("Subcategories")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

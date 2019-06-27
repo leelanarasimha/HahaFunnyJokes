@@ -1,0 +1,17 @@
+@model HahaFunnyJokes.Domain.ViewModels.Admin.CategoryViewModel;
+
+@{
+}
+
+<div>Categories List</div>
+@if (@Model.categories.Count > 0)
+{
+@foreach (var category in @Model.categories)
+ {
+     <div>@category.Name</div>
+ }
+}
+else
+{
+    <div>No Categories. Add One</div>
+}

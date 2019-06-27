@@ -14,6 +14,8 @@ namespace HahaFunnyJokes.Data
         public DbSet<Hobby> Hobbies { get; set; }
 
         public DbSet<UserHobby> UserHobbies { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Subcategory> Subcategories { get; set; }
 
         public HahaFunnyJokesDbContext(DbContextOptions options) : base(options)
         {
@@ -23,7 +25,11 @@ namespace HahaFunnyJokes.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<User>(options => { options.HasAlternateKey(s => new { s.Slug }); });
+            modelBuilder.Entity<User>(options =>
+            {
+                options.HasAlternateKey(s => new { s.Slug, s.Email });
+                options.Property(b => b.IsAdmin).HasDefaultValue(0);
+            });
             modelBuilder.Entity<Hobby>(options => { options.HasAlternateKey(s => new { s.Slug }); });
             modelBuilder.Entity<Category>(options => { options.HasAlternateKey(s => new { s.Slug }); });
             modelBuilder.Entity<Joke>(options => { options.HasAlternateKey(s => new { s.Slug }); });

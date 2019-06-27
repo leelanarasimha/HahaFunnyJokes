@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HahaFunnyJokes.Data;
+using HahaFunnyJokes.Data.Repositories;
+using HahaFunnyJokes.Domain.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,9 +35,13 @@ namespace HahaFunnyJokes.Mvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            
+
             services.AddDbContextPool<HahaFunnyJokesDbContext>(options => {
                 options.UseMySql(Configuration.GetConnectionString("funnyjokesdb"));
             });
+            
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

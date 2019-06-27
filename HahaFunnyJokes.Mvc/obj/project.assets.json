@@ -12186,40 +12186,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leelanarasimha\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/leelanarasimha/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Mvc\\HahaFunnyJokes.Mvc.csproj",
+      "projectUniqueName": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/HahaFunnyJokes.Mvc.csproj",
       "projectName": "HahaFunnyJokes.Mvc",
-      "projectPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Mvc\\HahaFunnyJokes.Mvc.csproj",
-      "packagesPath": "C:\\Users\\leelanarasimha\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Mvc\\obj\\",
+      "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/HahaFunnyJokes.Mvc.csproj",
+      "packagesPath": "/Users/leelanarasimha/.nuget/packages/",
+      "outputPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Mvc/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\leelanarasimha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/leelanarasimha/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.teamvelocityportal.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Data\\HahaFunnyJokes.Data.csproj": {
-              "projectPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Data\\HahaFunnyJokes.Data.csproj"
+            "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Data/HahaFunnyJokes.Data.csproj": {
+              "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Data/HahaFunnyJokes.Data.csproj"
             },
-            "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Domain\\HahaFunnyJokes.Domain.csproj": {
-              "projectPath": "D:\\dotnettraining\\HahaFunnyJokes\\HahaFunnyJokes.Domain\\HahaFunnyJokes.Domain.csproj"
+            "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj": {
+              "projectPath": "/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Domain/HahaFunnyJokes.Domain.csproj"
             }
           }
         }
