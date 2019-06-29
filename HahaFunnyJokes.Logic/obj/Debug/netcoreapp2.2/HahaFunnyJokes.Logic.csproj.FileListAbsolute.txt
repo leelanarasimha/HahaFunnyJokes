@@ -1,8 +1,0 @@
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.deps.json
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.dll
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/bin/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.pdb
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.csproj.CoreCompileInputs.cache
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.AssemblyInfoInputs.cache
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.AssemblyInfo.cs
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.dll
-/Users/leelanarasimha/code/dotnettraining/HahaFunnyJokes/HahaFunnyJokes.Logic/obj/Debug/netcoreapp2.2/HahaFunnyJokes.Logic.pdb
