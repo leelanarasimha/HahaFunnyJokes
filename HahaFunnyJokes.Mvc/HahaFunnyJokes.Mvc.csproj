@@ -15,11 +15,13 @@
   <ItemGroup>
     <ProjectReference Include="..\HahaFunnyJokes.Data\HahaFunnyJokes.Data.csproj" />
     <ProjectReference Include="..\HahaFunnyJokes.Domain\HahaFunnyJokes.Domain.csproj" />
+    <ProjectReference Include="..\HahaFunnyJokes.Logic\HahaFunnyJokes.Logic.csproj" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Views\Admin" />
+    <_ContentIncludedByDefault Remove="Views\Category\Add.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Category\Index.cshtml" />
   </ItemGroup>
 
 </Project>

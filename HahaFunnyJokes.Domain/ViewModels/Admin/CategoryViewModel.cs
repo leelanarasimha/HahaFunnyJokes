@@ -5,6 +5,6 @@ namespace HahaFunnyJokes.Domain.ViewModels.Admin
     public class CategoryViewModel
     {
         
-        public List<Category> categories { get; set; }
+        public IEnumerable<Category> categories { get; set; }
     }
 }

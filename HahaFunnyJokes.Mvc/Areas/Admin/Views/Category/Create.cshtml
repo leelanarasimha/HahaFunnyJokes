@@ -1,0 +1,30 @@
+@model HahaFunnyJokes.Domain.Category;
+
+@{
+}
+
+
+<div class="container">
+    <form method="post" asp-action="Create">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Create category</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="@Model.Name"></label>
+                    <input asp-for="@Model.Name" class="form-control"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </div>
+    </form>
+</div>

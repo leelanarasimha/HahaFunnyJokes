@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using HahaFunnyJokes.Domain;
 using HahaFunnyJokes.Domain.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace HahaFunnyJokes.Data.Repositories
 {
@@ -14,9 +16,14 @@ namespace HahaFunnyJokes.Data.Repositories
             _dbContext = dbContext;
         }
 
-        public List<Category> getAllCategories()
+        public async Task<IEnumerable<Category>> getAllCategories()
         {
-            return _dbContext.Categories.ToList();
+            return await _dbContext.Categories.ToListAsync();
+        }
+
+        public async Task<Category> getCategoryBySlug(string slug)
+        {
+            return await _dbContext.Categories.Where(c => c.Slug == slug).FirstOrDefaultAsync();
         }
     }
 }

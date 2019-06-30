@@ -4,7 +4,7 @@
 }
 
 <div>Categories List</div>
-@if (@Model.categories.Count > 0)
+@if (@Model.categories.Any())
 {
 @foreach (var category in @Model.categories)
  {
@@ -14,5 +14,5 @@
 else
 {
     <div class="alert alert-danger">No Categories. Add One</div>
-    <div><a asp-action="Add">Add Category</a></div>
+    <div><a asp-area="Admin" asp-controller="Category" asp-action="Create">Add Category</a></div>
 }

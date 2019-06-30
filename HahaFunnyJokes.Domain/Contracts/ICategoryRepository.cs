@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace HahaFunnyJokes.Domain.Contracts
 {
     public interface ICategoryRepository
     {
-        List<Category> getAllCategories();
+        Task<IEnumerable<Category>> getAllCategories();
+        Task<Category> getCategoryBySlug(string slug);
     }
 }
