@@ -8,5 +8,6 @@ namespace HahaFunnyJokes.Domain.Contracts
     {
         Task<IEnumerable<Category>> getAllCategories();
         Task<Category> getCategoryBySlug(string slug);
+        Task<Category> AddCategory(Category category);
     }
 }

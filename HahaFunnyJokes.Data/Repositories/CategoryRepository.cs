@@ -25,5 +25,12 @@ namespace HahaFunnyJokes.Data.Repositories
         {
             return await _dbContext.Categories.Where(c => c.Slug == slug).FirstOrDefaultAsync();
         }
+
+        public async Task<Category> AddCategory(Category category)
+        {
+            await _dbContext.AddAsync(category);
+            await _dbContext.SaveChangesAsync();
+            return category;
+        }
     }
 }

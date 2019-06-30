@@ -1,8 +1,10 @@
+using System;
 using System.Threading.Tasks;
 using HahaFunnyJokes.Domain;
 using HahaFunnyJokes.Domain.Contracts;
 using HahaFunnyJokes.Domain.ViewModels.Admin;
 using HahaFunnyJokes.Logic;
+using HahaFunnyJokes.Logic.Users;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
@@ -30,7 +32,7 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
         }
 
 
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
             var categorydetails = new Category();
             return View(categorydetails);
@@ -40,24 +42,31 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Category category)
         {
-            if (ModelState.IsValid)
+            
+            if (!ModelState.IsValid)
             {
-                var slugGenerator = "";
-                var found = 0;
-                do
-                {
-                    slugGenerator = SlugGenerator.makeSlug(category.Name);
-                    await 
-                    
-                } while ();
-
-
-
-                return RedirectToAction("Index");    
+                return View();
             }
+            
+            var slugGenerator = "";
+            var slugFound = new Category();
+                
+            do
+            {
+                slugGenerator = SlugGenerator.makeSlug(category.Name);
+                slugFound = await _categoryRepository.getCategoryBySlug(slugGenerator);
 
-            return View();
+            } while (slugFound != null);
 
+            category.Slug = slugGenerator;
+            category.UserId = (new LoggedInUser()).getUserId();
+            category.CreatedDate = new DateTime();
+
+            await _categoryRepository.AddCategory(category);
+            TempData["successmessage"] = "Category Added Successfully";
+                
+            return RedirectToAction("Index");
+            
         }
 
 

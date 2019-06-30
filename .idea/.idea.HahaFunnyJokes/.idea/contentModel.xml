@@ -71,9 +71,11 @@
         </e>
       </e>
       <e p="HahaFunnyJokes.Logic" t="IncludeRecursive">
-        <e p="Class1.cs" t="Include" />
         <e p="HahaFunnyJokes.Logic.csproj" t="IncludeRecursive" />
         <e p="SlugGenerator.cs" t="Include" />
+        <e p="Users" t="Include">
+          <e p="LoggedInUser.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
