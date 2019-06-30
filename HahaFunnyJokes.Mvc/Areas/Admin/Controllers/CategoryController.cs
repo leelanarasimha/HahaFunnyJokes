@@ -53,6 +53,7 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
                 
             do
             {
+                
                 slugGenerator = SlugGenerator.makeSlug(category.Name);
                 slugFound = await _categoryRepository.getCategoryBySlug(slugGenerator);
 
@@ -67,6 +68,12 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
                 
             return RedirectToAction("Index");
             
+        }
+
+        public async Task<IActionResult> Edit(int Id)
+        {
+            
+            return View();
         }
 
 

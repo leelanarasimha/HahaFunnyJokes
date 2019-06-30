@@ -1,28 +1,36 @@
-﻿<Properties StartupConfiguration="{E142B0A7-C509-4917-85B0-C530E6E4CE29}|Default">
+﻿<Properties StartupConfiguration="{A989F668-771B-43B2-981A-E5E02AA68B63}|Default">
   <MonoDevelop.Ide.ItemProperties.HahaFunnyJokes.Api PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HahaFunnyJokes.Api/appsettings.json">
+  <MonoDevelop.Ide.ItemProperties.HahaFunnyJokes.Mvc PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs">
     <Files>
-      <File FileName="HahaFunnyJokes.Domain/Role.cs" Line="1" Column="1" />
-      <File FileName="HahaFunnyJokes.Domain/User.cs" />
-      <File FileName="HahaFunnyJokes.Domain/Joke.cs" />
-      <File FileName="HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" Line="20" Column="1" />
-      <File FileName="HahaFunnyJokes.Api/Program.cs" />
-      <File FileName="HahaFunnyJokes.Api/Startup.cs" Line="55" Column="1" />
-      <File FileName="HahaFunnyJokes.Api/appsettings.json" Line="1" Column="1" />
+      <File FileName="HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" Line="83" Column="2" />
+      <File FileName="HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" Line="11" Column="48" />
+      <File FileName="HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" Line="41" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HahaFunnyJokes" expanded="True">
-            <Node name="HahaFunnyJokes.Api" expanded="True">
-              <Node name="appsettings.json" selected="True" />
+            <Node name="HahaFunnyJokes.Data" expanded="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="CategoryRepository.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="HahaFunnyJokes.Data" expanded="True" />
+            <Node name="HahaFunnyJokes.Domain" expanded="True">
+              <Node name="Contracts" expanded="True" />
+            </Node>
+            <Node name="HahaFunnyJokes.Mvc" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Category" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

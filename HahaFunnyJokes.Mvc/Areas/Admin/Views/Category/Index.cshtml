@@ -4,15 +4,42 @@
 }
 
 <div>Categories List</div>
+<div><a asp-area="Admin" asp-controller="Category" asp-action="Create">Add Category</a></div>
+
+
 @if (@Model.categories.Any())
 {
+    <table class="table ">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Slug</th>
+            <th>User</th>
+            <th>Action</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        
+        
+        
 @foreach (var category in @Model.categories)
  {
-     <div>@category.Name</div>
+     <tr>
+         <td>@category.Name</td>
+         <td>@category.Slug</td>
+         <td>@category.User.Name</td>
+         <td>
+             <a asp-area="admin" asp-controller="Category" asp-action="Edit" asp-route-Id="@category.Id">Edit</a>
+             <a asp-area="admin" asp-controller="Category" asp-action="Edit" asp-route-Id="@category.Id">Edit</a>
+         </td>
+     </tr>
+     
  }
+        </tbody>
+            </table>
 }
 else
 {
     <div class="alert alert-danger">No Categories. Add One</div>
-    <div><a asp-area="Admin" asp-controller="Category" asp-action="Create">Add Category</a></div>
-}
+} 

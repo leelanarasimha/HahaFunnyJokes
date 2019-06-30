@@ -18,7 +18,7 @@ namespace HahaFunnyJokes.Data.Repositories
 
         public async Task<IEnumerable<Category>> getAllCategories()
         {
-            return await _dbContext.Categories.ToListAsync();
+            return await _dbContext.Categories.Include(c => c.User).ToListAsync();
         }
 
         public async Task<Category> getCategoryBySlug(string slug)
@@ -31,6 +31,11 @@ namespace HahaFunnyJokes.Data.Repositories
             await _dbContext.AddAsync(category);
             await _dbContext.SaveChangesAsync();
             return category;
+        }
+
+        public async Task<Category> getCategoryById(int Id)
+        {
+            return await _dbContext.Categories.Where(c => c.Id == Id).FirstOrDefaultAsync();
         }
     }
 }
