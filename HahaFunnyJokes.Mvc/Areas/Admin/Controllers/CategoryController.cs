@@ -72,12 +72,29 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
 
         public async Task<IActionResult> Edit(int Id)
         {
+            var categorydetails = await _categoryRepository.getCategoryById(Id);
             
-            return View();
+            return View(categorydetails);
         }
 
+        
+        [HttpPost]
+        public async Task<IActionResult> Edit(int Id, Category category)
+        {
+            var categorydetails = await _categoryRepository.getCategoryById(Id);
+            
+            if (categorydetails == null)
+            {
+                TempData["errormessage"] = "Invalid Category";
+                return RedirectToAction("Index");
+            }
+            
+            
+            
 
-
+            TempData["successmessage"] = "Category Updated Successfully";
+            return RedirectToAction("Index");
+        }
 
     }
 }
