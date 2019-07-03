@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HahaFunnyJokes.Domain
+namespace HahaFunnyJokes.Domain.Entities
 {
     public class Joke
     {

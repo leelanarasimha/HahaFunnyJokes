@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HahaFunnyJokes.Domain
+namespace HahaFunnyJokes.Domain.Entities
 {
     public class Subcategory
     {

@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad35fb75-682f-4831-ab99-7eb861068886" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CreateCategoryViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HahaFunnyJokes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HahaFunnyJokes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HahaFunnyJokes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HahaFunnyJokes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/HahaFunnyJokes/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/HahaFunnyJokes/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Category.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Hobby.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Joke.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/Subcategory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/User.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/UserHobby.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,23 +26,82 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="226">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
-                <marker date="1561881161254" expanded="false" signature="6:251" ph="..." />
-                <marker date="1561881161254" expanded="true" signature="305:2138" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="376:2136" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="514:588" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="670:908" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="751:840" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="948:1060" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="1156:2011" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="1216:1275" ph="{...}" />
-                <marker date="1561881161254" expanded="true" signature="2066:2126" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="6:325" ph="..." />
+                <marker date="1562181019023" expanded="true" signature="379:3556" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="450:3554" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="588:662" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="744:982" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="825:914" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="1022:1149" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="1250:2769" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="1416:1766" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="1513:1628" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="1804:1863" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="2824:2980" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="3082:3547" ph="{...}" />
+                <marker date="1562181019023" expanded="true" signature="3236:3377" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CreateCategoryViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <marker date="1562180825085" expanded="true" signature="6:51" ph="..." />
+                <marker date="1562180825085" expanded="true" signature="101:255" ph="{...}" />
+                <marker date="1562180825085" expanded="true" signature="144:253" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Models/CategoryModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding>
+                <marker date="1562179918480" expanded="true" signature="84:201" ph="{...}" />
+                <marker date="1562179918480" expanded="true" signature="117:199" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <marker date="1562181327604" expanded="true" signature="71:75" ph="@..." />
+                <marker date="1562181327604" expanded="true" signature="78:177" ph="@..." />
+                <marker date="1562181327604" expanded="true" signature="111:177" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <folding>
+                <marker date="1562175447994" expanded="true" signature="6:71" ph="..." />
+                <marker date="1562175447994" expanded="true" signature="121:243" ph="{...}" />
+                <marker date="1562175447994" expanded="true" signature="158:241" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -45,27 +110,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
               <folding>
-                <marker date="1561881133583" expanded="true" signature="0:9" ph="@..." />
+                <marker date="1562179705413" expanded="true" signature="49:58" ph="@..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/UserHobby.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state>
               <folding>
-                <marker date="1561652215961" expanded="true" signature="6:79" ph="..." />
-                <marker date="1561652215961" expanded="true" signature="110:1390" ph="{...}" />
-                <marker date="1561652215961" expanded="true" signature="165:1388" ph="{...}" />
-                <marker date="1561652215961" expanded="true" signature="577:598" ph="{...}" />
-                <marker date="1561652215961" expanded="true" signature="674:1382" ph="{...}" />
-                <marker date="1561652215961" expanded="true" signature="747:902" ph="{...}" />
+                <marker date="1562175425014" expanded="true" signature="41:263" ph="{...}" />
+                <marker date="1562175425014" expanded="true" signature="70:261" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="40" />
+              <folding>
+                <marker date="1562180048471" expanded="true" signature="6:115" ph="..." />
+                <marker date="1562180048471" expanded="true" signature="158:484" ph="{...}" />
+                <marker date="1562180048471" expanded="true" signature="201:482" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -74,32 +148,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="608">
+              <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
               <folding>
-                <marker date="1561882145507" expanded="false" signature="6:187" ph="..." />
-                <marker date="1561882145507" expanded="true" signature="231:1229" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="291:1227" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="419:475" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="544:647" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="715:832" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="900:1047" ph="{...}" />
-                <marker date="1561882145507" expanded="true" signature="1108:1221" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="6:225" ph="..." />
+                <marker date="1562181096304" expanded="true" signature="269:1452" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="329:1450" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="457:513" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="582:685" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="753:870" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="938:1085" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="1153:1270" ph="{...}" />
+                <marker date="1562181096304" expanded="true" signature="1331:1444" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="80">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
-                <marker date="1561882286383" expanded="true" signature="66:70" ph="@..." />
-                <marker date="1561882286383" expanded="true" signature="195:1016" ph="@..." />
-                <marker date="1561882286383" expanded="true" signature="464:902" ph="@..." />
-                <marker date="1561882286383" expanded="true" signature="508:902" ph="{...}" />
+                <marker date="1562175707469" expanded="true" signature="6:117" ph="..." />
+                <marker date="1562175707469" expanded="true" signature="148:1428" ph="{...}" />
+                <marker date="1562175707469" expanded="true" signature="203:1426" ph="{...}" />
+                <marker date="1562175707469" expanded="true" signature="615:636" ph="{...}" />
+                <marker date="1562175707469" expanded="true" signature="712:1420" ph="{...}" />
+                <marker date="1562175707469" expanded="true" signature="785:940" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -107,27 +184,35 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getCategoryBySlug</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Joke.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Hobby.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Joke.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/UserHobby.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CreateCategoryViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Api/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Hobby.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/UserHobby.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Models/CategoryModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Subcategory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Category.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Category.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Subcategory.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -138,29 +223,39 @@
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Api/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Category.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Api/appsettings.json" />
-        <option value="$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/User.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Admin/Category/Index.cshtml" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Pages/Category/Index.cshtml" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Startup.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/appsettings.json" />
-        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" />
-        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Add.cshtml" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/Admin/CategoryController.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Index.cshtml" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Hobby.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Subcategory.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/User.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/UserHobby.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Joke.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Category.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Models/Category.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Models/CategoryModel.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CreateCategoryViewModel.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs" />
         <option value="$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs" />
-        <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml" />
+        <option value="$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="43" />
-    <option name="width" value="1400" />
-    <option name="height" value="768" />
+    <option name="x" value="51" />
+    <option name="y" value="27" />
+    <option name="width" value="1315" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -186,6 +280,30 @@
               <item name="HahaFunnyJokes" type="24d0babc:SolutionExplorerModelNode" />
               <item name="HahaFunnyJokes.Data" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="HahaFunnyJokes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="HahaFunnyJokes.Domain" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="HahaFunnyJokes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="HahaFunnyJokes.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Contracts" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="HahaFunnyJokes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="HahaFunnyJokes.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="HahaFunnyJokes" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="HahaFunnyJokes.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ViewModels" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Admin" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
@@ -235,6 +353,7 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
     </panes>
   </component>
@@ -242,6 +361,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,6 +406,10 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.HahaFunnyJokes.Api" />
+      <item itemvalue=".NET Launch Settings Profile.HahaFunnyJokes.Api: IIS Express" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -298,6 +422,7 @@
       <option name="presentableId" value="Default" />
       <updated>1561572437218</updated>
       <workItem from="1561572439621" duration="2256000" />
+      <workItem from="1562179588429" duration="1739000" />
     </task>
     <task id="LOCAL-00001" summary="Added List code">
       <created>1561657484709</created>
@@ -310,7 +435,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8512000" />
+    <option name="totallyTimeSpent" value="11666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,9 +447,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="43" width="1400" height="768" extended-state="0" />
+    <frame x="51" y="27" width="1315" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2710796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,13 +463,13 @@
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32988167" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32988167" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32988167" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.32988167" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -399,17 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Hobby.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1561651416470" expanded="true" signature="66:290" ph="{...}" />
-            <marker date="1561651416470" expanded="true" signature="91:288" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Api/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -427,70 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Subcategory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <marker date="1561651416470" expanded="false" signature="6:66" ph="..." />
-            <marker date="1561651416470" expanded="true" signature="99:487" ph="{...}" />
-            <marker date="1561651416470" expanded="true" signature="130:485" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Joke.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <marker date="1561651416470" expanded="true" signature="45:664" ph="{...}" />
-            <marker date="1561651416470" expanded="true" signature="69:662" ph="{...}" />
-            <marker date="1561651416470" expanded="true" signature="97:117" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/UserHobby.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <marker date="1561574355343" expanded="true" signature="31:253" ph="{...}" />
-            <marker date="1561574355343" expanded="true" signature="60:251" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Api/appsettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Category.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <marker date="1561651516126" expanded="false" signature="6:66" ph="..." />
-            <marker date="1561651516126" expanded="true" signature="99:418" ph="{...}" />
-            <marker date="1561651516126" expanded="true" signature="127:416" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <marker date="1561653363010" expanded="false" signature="6:47" ph="..." />
-            <marker date="1561653363010" expanded="true" signature="80:838" ph="{...}" />
-            <marker date="1561653363010" expanded="true" signature="104:836" ph="{...}" />
-            <marker date="1561653363010" expanded="true" signature="132:339" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -522,29 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <marker date="1561657292108" expanded="true" signature="6:47" ph="..." />
-            <marker date="1561657292108" expanded="true" signature="90:190" ph="{...}" />
-            <marker date="1561657292108" expanded="true" signature="133:188" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <marker date="1561657848624" expanded="true" signature="83:198" ph="{...}" />
-            <marker date="1561657848624" expanded="true" signature="120:196" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
@@ -563,104 +595,9 @@
     <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/wwwroot/lib/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Add.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/Admin/CategoryController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <marker date="1561658249637" expanded="true" signature="6:130" ph="..." />
-            <marker date="1561658249637" expanded="true" signature="178:906" ph="{...}" />
-            <marker date="1561658249637" expanded="true" signature="229:904" ph="{...}" />
-            <marker date="1561658249637" expanded="true" signature="367:441" ph="{...}" />
-            <marker date="1561658249637" expanded="true" signature="530:763" ph="{...}" />
-            <marker date="1561658249637" expanded="true" signature="611:694" ph="{...}" />
-            <marker date="1561658249637" expanded="true" signature="838:898" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1561658388077" expanded="true" signature="66:70" ph="@..." />
-            <marker date="1561658388077" expanded="true" signature="99:344" ph="@..." />
-            <marker date="1561658388077" expanded="true" signature="132:218" ph="{...}" />
-            <marker date="1561658388077" expanded="true" signature="179:216" ph="{...}" />
-            <marker date="1561658388077" expanded="true" signature="223:344" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <marker date="1561652215961" expanded="true" signature="6:79" ph="..." />
-            <marker date="1561652215961" expanded="true" signature="110:1390" ph="{...}" />
-            <marker date="1561652215961" expanded="true" signature="165:1388" ph="{...}" />
-            <marker date="1561652215961" expanded="true" signature="577:598" ph="{...}" />
-            <marker date="1561652215961" expanded="true" signature="674:1382" ph="{...}" />
-            <marker date="1561652215961" expanded="true" signature="747:902" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <marker date="1561881161254" expanded="false" signature="6:251" ph="..." />
-            <marker date="1561881161254" expanded="true" signature="305:2138" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="376:2136" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="514:588" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="670:908" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="751:840" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="948:1060" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="1156:2011" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="1216:1275" ph="{...}" />
-            <marker date="1561881161254" expanded="true" signature="2066:2126" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding>
-            <marker date="1561882145507" expanded="false" signature="6:187" ph="..." />
-            <marker date="1561882145507" expanded="true" signature="231:1229" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="291:1227" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="419:475" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="544:647" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="715:832" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="900:1047" ph="{...}" />
-            <marker date="1561882145507" expanded="true" signature="1108:1221" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <marker date="1561881133583" expanded="true" signature="0:9" ph="@..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Add.cshtml" />
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Controllers/Admin/CategoryController.cs" />
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Views/Category/Index.cshtml" />
     <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Index.cshtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -670,6 +607,201 @@
             <marker date="1561882286383" expanded="true" signature="195:1016" ph="@..." />
             <marker date="1561882286383" expanded="true" signature="464:902" ph="@..." />
             <marker date="1561882286383" expanded="true" signature="508:902" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Hobby.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding>
+            <marker date="1562175517031" expanded="true" signature="75:299" ph="{...}" />
+            <marker date="1562175517031" expanded="true" signature="100:297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Subcategory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <marker date="1562175516975" expanded="false" signature="6:66" ph="..." />
+            <marker date="1562175516975" expanded="true" signature="108:496" ph="{...}" />
+            <marker date="1562175516975" expanded="true" signature="139:494" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Category.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <marker date="1562175486755" expanded="false" signature="6:111" ph="..." />
+            <marker date="1562175486755" expanded="true" signature="153:490" ph="{...}" />
+            <marker date="1562175486755" expanded="true" signature="181:488" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/Joke.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding>
+            <marker date="1562175433070" expanded="true" signature="54:673" ph="{...}" />
+            <marker date="1562175433070" expanded="true" signature="78:671" ph="{...}" />
+            <marker date="1562175433070" expanded="true" signature="106:126" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding>
+            <marker date="1562175517091" expanded="false" signature="6:47" ph="..." />
+            <marker date="1562175517091" expanded="true" signature="89:847" ph="{...}" />
+            <marker date="1562175517091" expanded="true" signature="113:845" ph="{...}" />
+            <marker date="1562175517091" expanded="true" signature="141:348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Entities/UserHobby.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1562175425014" expanded="true" signature="41:263" ph="{...}" />
+            <marker date="1562175425014" expanded="true" signature="70:261" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/HahaFunnyJokesDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <marker date="1562175707469" expanded="true" signature="6:117" ph="..." />
+            <marker date="1562175707469" expanded="true" signature="148:1428" ph="{...}" />
+            <marker date="1562175707469" expanded="true" signature="203:1426" ph="{...}" />
+            <marker date="1562175707469" expanded="true" signature="615:636" ph="{...}" />
+            <marker date="1562175707469" expanded="true" signature="712:1420" ph="{...}" />
+            <marker date="1562175707469" expanded="true" signature="785:940" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Edit.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+          <folding>
+            <marker date="1562179705413" expanded="true" signature="49:58" ph="@..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Models/CategoryModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <marker date="1562179918480" expanded="true" signature="84:201" ph="{...}" />
+            <marker date="1562179918480" expanded="true" signature="117:199" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/Contracts/ICategoryRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <marker date="1562180048471" expanded="true" signature="6:115" ph="..." />
+            <marker date="1562180048471" expanded="true" signature="158:484" ph="{...}" />
+            <marker date="1562180048471" expanded="true" signature="201:482" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CreateCategoryViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <marker date="1562180825085" expanded="true" signature="6:51" ph="..." />
+            <marker date="1562180825085" expanded="true" signature="101:255" ph="{...}" />
+            <marker date="1562180825085" expanded="true" signature="144:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Controllers/CategoryController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <marker date="1562181019023" expanded="true" signature="6:325" ph="..." />
+            <marker date="1562181019023" expanded="true" signature="379:3556" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="450:3554" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="588:662" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="744:982" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="825:914" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="1022:1149" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="1250:2769" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="1416:1766" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="1513:1628" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="1804:1863" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="2824:2980" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="3082:3547" ph="{...}" />
+            <marker date="1562181019023" expanded="true" signature="3236:3377" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Data/Repositories/CategoryRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
+          <folding>
+            <marker date="1562181096304" expanded="true" signature="6:225" ph="..." />
+            <marker date="1562181096304" expanded="true" signature="269:1452" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="329:1450" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="457:513" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="582:685" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="753:870" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="938:1085" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="1153:1270" ph="{...}" />
+            <marker date="1562181096304" expanded="true" signature="1331:1444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Domain/ViewModels/Admin/CategoryViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <marker date="1562175447994" expanded="true" signature="6:71" ph="..." />
+            <marker date="1562175447994" expanded="true" signature="121:243" ph="{...}" />
+            <marker date="1562175447994" expanded="true" signature="158:241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HahaFunnyJokes.Mvc/Areas/Admin/Views/Category/Create.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <marker date="1562181327604" expanded="true" signature="71:75" ph="@..." />
+            <marker date="1562181327604" expanded="true" signature="78:177" ph="@..." />
+            <marker date="1562181327604" expanded="true" signature="111:177" ph="{...}" />
           </folding>
         </state>
       </provider>

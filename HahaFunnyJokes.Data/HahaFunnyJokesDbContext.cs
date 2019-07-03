@@ -1,5 +1,6 @@
 ﻿using System;
 using HahaFunnyJokes.Domain;
+using HahaFunnyJokes.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HahaFunnyJokes.Data

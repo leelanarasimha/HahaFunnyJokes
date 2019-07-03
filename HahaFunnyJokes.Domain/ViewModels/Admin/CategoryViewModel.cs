@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using HahaFunnyJokes.Domain.Entities;
 
 namespace HahaFunnyJokes.Domain.ViewModels.Admin
 {

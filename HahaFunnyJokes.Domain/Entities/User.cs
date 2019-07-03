@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HahaFunnyJokes.Domain
+namespace HahaFunnyJokes.Domain.Entities
 {
     public class User
     {

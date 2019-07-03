@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using HahaFunnyJokes.Domain.Entities;
 
 namespace HahaFunnyJokes.Domain.Contracts
 {
@@ -10,5 +11,6 @@ namespace HahaFunnyJokes.Domain.Contracts
         Task<Category> getCategoryBySlug(string slug);
         Task<Category> getCategoryById(int Id);
         Task<Category> AddCategory(Category category);
+        Task<Category> getCategoryByName(string Name);
     }
 }

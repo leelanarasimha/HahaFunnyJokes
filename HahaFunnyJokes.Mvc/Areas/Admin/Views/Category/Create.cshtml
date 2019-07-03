@@ -1,8 +1,13 @@
-@model HahaFunnyJokes.Domain.Category;
+@model HahaFunnyJokes.Domain.ViewModels.Admin.CreateCategoryViewModel
 
 @{
 }
 
+
+@if (@Model.errormessage != null)
+{
+    <div class="alert alert-danger">@Model.errormessage</div>
+}
 
 <div class="container">
     <form method="post" asp-action="Create">
@@ -15,8 +20,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
-                    <label asp-for="@Model.Name"></label>
-                    <input asp-for="@Model.Name" class="form-control"/>
+                    <label asp-for="category.Name"></label>
+                    <input asp-for="category.Name" class="form-control"/>
                 </div>
             </div>
         </div>

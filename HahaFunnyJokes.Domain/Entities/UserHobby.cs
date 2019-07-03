@@ -1,4 +1,5 @@
-namespace HahaFunnyJokes.Domain
+
+namespace HahaFunnyJokes.Domain.Entities
 {
     public class UserHobby
     {

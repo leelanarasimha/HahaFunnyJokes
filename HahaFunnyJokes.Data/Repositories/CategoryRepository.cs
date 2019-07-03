@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using HahaFunnyJokes.Domain;
 using HahaFunnyJokes.Domain.Contracts;
+using HahaFunnyJokes.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HahaFunnyJokes.Data.Repositories
@@ -31,6 +32,11 @@ namespace HahaFunnyJokes.Data.Repositories
             await _dbContext.AddAsync(category);
             await _dbContext.SaveChangesAsync();
             return category;
+        }
+
+        public async Task<Category> getCategoryByName(string Name)
+        {
+            return await _dbContext.Categories.Where(c => c.Name == Name).FirstOrDefaultAsync();
         }
 
         public async Task<Category> getCategoryById(int Id)
