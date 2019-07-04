@@ -31,10 +31,15 @@
         <e p="Migrations" t="Include">
           <e p="20190627163615_AddAllCategory.Designer.cs" t="Include" />
           <e p="20190627163615_AddAllCategory.cs" t="Include" />
+          <e p="20190704150748_uniquekeyupdate.Designer.cs" t="Include" />
+          <e p="20190704150748_uniquekeyupdate.cs" t="Include" />
+          <e p="20190704150925_alluniquekeysupdate.Designer.cs" t="Include" />
+          <e p="20190704150925_alluniquekeysupdate.cs" t="Include" />
           <e p="HahaFunnyJokesDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Repositories" t="Include">
           <e p="CategoryRepository.cs" t="Include" />
+          <e p="SubcategoryRepository.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -48,6 +53,8 @@
       <e p="HahaFunnyJokes.Domain" t="IncludeRecursive">
         <e p="Contracts" t="Include">
           <e p="ICategoryRepository.cs" t="Include" />
+          <e p="ICommonRepository.cs" t="Include" />
+          <e p="ISubcategoryRespository.cs" t="Include" />
         </e>
         <e p="Entities" t="Include">
           <e p="Category.cs" t="Include" />
@@ -65,6 +72,9 @@
           <e p="Admin" t="Include">
             <e p="CategoryViewModel.cs" t="Include" />
             <e p="CreateCategoryViewModel.cs" t="Include" />
+            <e p="Subcategory" t="Include">
+              <e p="SubcategoryViewModel.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
@@ -96,11 +106,16 @@
           <e p="Admin" t="Include">
             <e p="Controllers" t="Include">
               <e p="CategoryController.cs" t="Include" />
+              <e p="SubcategoryController.cs" t="Include" />
             </e>
             <e p="Views" t="Include">
               <e p="Category" t="Include">
                 <e p="Create.cshtml" t="Include" />
                 <e p="Edit.cshtml" t="Include" />
+                <e p="Index.cshtml" t="Include" />
+              </e>
+              <e p="Subcategory" t="Include">
+                <e p="Create.cshtml" t="Include" />
                 <e p="Index.cshtml" t="Include" />
               </e>
             </e>
@@ -125,6 +140,10 @@
           </e>
           <e p="Shared" t="Include">
             <e p="Error.cshtml" t="Include" />
+            <e p="Partials" t="Include">
+              <e p="_AdminSidemenu.cshtml" t="Include" />
+            </e>
+            <e p="_AdminLayout.cshtml" t="Include" />
             <e p="_CookieConsentPartial.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />

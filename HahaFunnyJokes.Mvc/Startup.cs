@@ -42,6 +42,7 @@ namespace HahaFunnyJokes.Mvc
             });
             
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ISubcategoryRespository, SubcategoryRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

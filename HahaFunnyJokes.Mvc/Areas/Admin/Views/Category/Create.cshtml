@@ -1,6 +1,7 @@
 @model HahaFunnyJokes.Domain.ViewModels.Admin.CreateCategoryViewModel
 
 @{
+    Layout = "_AdminLayout";
 }
 
 
@@ -9,7 +10,7 @@
     <div class="alert alert-danger">@Model.errormessage</div>
 }
 
-<div class="container">
+
     <form method="post" asp-action="Create">
         <div class="row">
             <div class="col-md-12">
@@ -32,4 +33,3 @@
             </div>
         </div>
     </form>
-</div>

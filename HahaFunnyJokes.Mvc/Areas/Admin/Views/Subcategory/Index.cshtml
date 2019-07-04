@@ -1,0 +1,41 @@
+@model HahaFunnyJokes.Domain.ViewModels.Admin.Subcategory.SubcategoryViewModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+
+<div>
+    <div>
+        <a asp-area="admin" asp-action="Create" asp-controller="Subcategory">Create Subcategory</a>
+    </div>
+    @if (Model.Subcategories.Any())
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Slug</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            @foreach (var subcategory in @Model.Subcategories)
+            {
+                <tr>
+                    <td>@subcategory.Name</td>
+                    <td>@subcategory.Slug</td>
+                    <td>@subcategory.Category.Name</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div>No subcategories found</div>
+    }
+</div>
