@@ -3,14 +3,16 @@ using System;
 using HahaFunnyJokes.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HahaFunnyJokes.Data.Migrations
 {
     [DbContext(typeof(HahaFunnyJokesDbContext))]
-    partial class HahaFunnyJokesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190704150748_uniquekeyupdate")]
+    partial class uniquekeyupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,12 +49,12 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Slug");
+                    b.Property<string>("Slug")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Slug")
-                        .IsUnique();
+                    b.HasAlternateKey("Slug");
 
                     b.ToTable("Hobbies");
                 });
@@ -70,7 +72,8 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Slug");
+                    b.Property<string>("Slug")
+                        .IsRequired();
 
                     b.Property<DateTime>("StartDate");
 
@@ -80,10 +83,9 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
+                    b.HasAlternateKey("Slug");
 
-                    b.HasIndex("Slug")
-                        .IsUnique();
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("SubcategoryId");
 
@@ -123,7 +125,8 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<DateTime>("CreatedDate");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
                     b.Property<int>("IsAdmin")
                         .ValueGeneratedOnAdd()
@@ -131,12 +134,12 @@ namespace HahaFunnyJokes.Data.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("Slug");
+                    b.Property<string>("Slug")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Slug", "Email")
-                        .IsUnique();
+                    b.HasAlternateKey("Slug", "Email");
 
                     b.ToTable("Users");
                 });

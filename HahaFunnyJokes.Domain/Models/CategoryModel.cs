@@ -8,5 +8,6 @@ namespace HahaFunnyJokes.Domain.Models
         [Required]
         public string Name { get; set; }
 
+
     }
 }

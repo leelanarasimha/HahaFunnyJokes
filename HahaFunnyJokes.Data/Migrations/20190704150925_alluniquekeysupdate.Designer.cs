@@ -3,14 +3,16 @@ using System;
 using HahaFunnyJokes.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HahaFunnyJokes.Data.Migrations
 {
     [DbContext(typeof(HahaFunnyJokesDbContext))]
-    partial class HahaFunnyJokesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190704150925_alluniquekeysupdate")]
+    partial class alluniquekeysupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

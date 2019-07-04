@@ -29,7 +29,7 @@ namespace HahaFunnyJokes.Data.Repositories
 
         public async Task<Category> AddCategory(Category category)
         {
-            await _dbContext.AddAsync(category);
+            await _dbContext.Categories.AddAsync(category);
             await _dbContext.SaveChangesAsync();
             return category;
         }
@@ -42,6 +42,13 @@ namespace HahaFunnyJokes.Data.Repositories
         public async Task<Category> getCategoryById(int Id)
         {
             return await _dbContext.Categories.Where(c => c.Id == Id).FirstOrDefaultAsync();
+        }
+
+        public  async Task<Category> UpdateCategory(Category category)
+        {
+            _dbContext.Entry(category).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
+            return category;
         }
     }
 }

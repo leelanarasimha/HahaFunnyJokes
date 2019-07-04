@@ -12,5 +12,7 @@ namespace HahaFunnyJokes.Domain.Contracts
         Task<Category> getCategoryById(int Id);
         Task<Category> AddCategory(Category category);
         Task<Category> getCategoryByName(string Name);
+
+        Task<Category> UpdateCategory(Category category);
     }
 }

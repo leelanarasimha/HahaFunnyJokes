@@ -28,12 +28,15 @@ namespace HahaFunnyJokes.Data
 
             modelBuilder.Entity<User>(options =>
             {
-                options.HasAlternateKey(s => new { s.Slug, s.Email });
+                options.HasIndex(u => new { u.Slug, u.Email }).IsUnique();
                 options.Property(b => b.IsAdmin).HasDefaultValue(0);
             });
-            modelBuilder.Entity<Hobby>(options => { options.HasAlternateKey(s => new { s.Slug }); });
-            modelBuilder.Entity<Category>(options => { options.HasAlternateKey(s => new { s.Slug }); });
-            modelBuilder.Entity<Joke>(options => { options.HasAlternateKey(s => new { s.Slug }); });
+
+            modelBuilder.Entity<Hobby>(options => { options.HasIndex(u => u.Slug).IsUnique(); });
+
+            modelBuilder.Entity<Category>(options => { options.HasIndex(u => u.Slug).IsUnique(); });
+
+            modelBuilder.Entity<Joke>(options => { options.HasIndex(u => u.Slug).IsUnique(); });
 
             modelBuilder.Entity<UserHobby>(options => { options.HasKey(s => new { s.UserId, s.HobbyId }); });
 
