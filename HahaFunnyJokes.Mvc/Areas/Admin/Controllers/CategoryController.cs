@@ -56,9 +56,7 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
 
                 };
 
-                categorymodel.category = new CategoryModel() {
-                     Name = categoryNameExists.Name
-                }; 
+                categorymodel.category = category;
 
                 return View(categorymodel);
             }
@@ -87,7 +85,15 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int Id)
         {
             var categorydetails = await _categoryRepository.getCategoryById(Id);
-            return View(categorydetails);
+            var categoryViewModel = new CreateCategoryViewModel()
+            {
+                category = new CategoryModel()
+                {
+                    Name = categorydetails.Name
+                }
+            };
+            
+            return View(categoryViewModel);
 
         }
 
@@ -109,11 +115,13 @@ namespace HahaFunnyJokes.Mvc.Areas.Admin.Controllers
             var categoryNameExists = await _categoryRepository.getCategoryByName(category.Name);
 
             if (categoryNameExists != null && categoryNameExists.Id != Id) {
+                
                 var createCategoryModel = new CreateCategoryViewModel()
                 {
                     category = category,
-                    errormessage = "Category Name Aready exists. Please try with other name"
+                    errormessage = "Category Name Already exists. Please try with other name"
                 };
+                
 
                 return View(createCategoryModel);
             }

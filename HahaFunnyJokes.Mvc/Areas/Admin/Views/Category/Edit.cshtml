@@ -1,4 +1,4 @@
-@model HahaFunnyJokes.Domain.Entities.Category;
+@model HahaFunnyJokes.Domain.ViewModels.Admin.CreateCategoryViewModel;
 
 @{
     
@@ -12,11 +12,15 @@
     
     <div class="row">
         <div class="col-md-12">
+            @if (Model.errormessage != null)
+            {
+                <div class="alert alert-danger">@Model.errormessage</div>
+            }
             <form method="post" asp-action="Edit">
-                
+
                 <div class="form-group">
-                    <label asp-for="@Model.Name">Name</label>
-                    <input asp-for="@Model.Name" class="form-control"/>
+                    <label asp-for="category.Name">Name</label>
+                    <input asp-for="category.Name" class="form-control"/>
                 </div>
 
                 <div>
